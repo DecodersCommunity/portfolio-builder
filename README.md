@@ -28,7 +28,7 @@ Do star the Decoder's repository ✨✨✨
 
 A repository to publish your single page portfolios.
 
-Made with the intention of guiding beginner contributors towards open source, this respository is going to be maintained by: [Ishita Gupta](https://github.com/ishita1521) , [Sneha Agarwal](https://github.com/isyneha) and [Aastha Chauhan](https://github.com/aastha-chauhan-gits) 
+Made with the intention of guiding beginner contributors towards open source, this respository is going to be maintained by: [Ishita Gupta](https://github.com/ishita1521) , [Sneha Agarwal](https://github.com/isyneha) and [Aastha Chauhan](https://github.com/aastha-chauhan-gits). 
 
 ## How to Contribute?
 
