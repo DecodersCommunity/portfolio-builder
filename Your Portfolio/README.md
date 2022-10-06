@@ -7,7 +7,7 @@ Please check the [contributing guide](CONTRIBUTING.md) to become a contributor.
 ## Steps to Contribute
 1. In the [Your Portfolio](https://github.com/DecodersCommunity/portfolio-builder/tree/main/Your%20Portfolio) folder make a HTML file named "YourRollNo.html".
 2. Copy and Paste the content of the [index.html](https://github.com/DecodersCommunity/portfolio-builder/blob/main/Template/index.html) file to your file.
-3. Start editing the content of the files from HTML BODY as mentioned in the comments.
+3. Start editing the contents of the file from HTML BODY as mentioned in the comments.
 4. Finally, see how your portfolio looks.
 
 ## See your Portfolios
