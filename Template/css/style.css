@@ -88,6 +88,7 @@ h6, .h6 {
 .container-xl { 
   width: 100%;
   padding-right: 15px;
+  margin-top: 40px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
@@ -158,7 +159,7 @@ h6, .h6 {
 }
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -182,7 +183,7 @@ h6, .h6 {
 
 .navbar-nav {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -276,7 +277,10 @@ h6, .h6 {
 
 
 .d-none {
-  display: none !important;
+  display: block !important;
+  font-size: 25px;
+  margin-top: 30px;
+  color: white;
 }
 
 .d-flex {
@@ -336,7 +340,7 @@ h6, .h6 {
 
 
 .m-0-a {
-  margin-top: 50px;
+  margin-top: 200px;
 }
 
 
@@ -381,6 +385,7 @@ h6, .h6 {
 
 
 .text-center {
+  margin-top: -150px;
   text-align: center !important;
 }
 
