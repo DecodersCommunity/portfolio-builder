@@ -1,28 +1,8 @@
 ![Untitled design (2)](https://user-images.githubusercontent.com/75475819/192336309-98249162-ca44-4f7c-b930-25f4beaa105f.png)
 
-<p align="center">
-<a href="https://t.me/decoderscommunity">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" height="50px" />
-</a>&nbsp; &nbsp; &nbsp;
-<a href="https://www.linkedin.com/company/decoderscommunity">
-  <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/linkedin.webp" height="50px" />
-</a>&nbsp; &nbsp; &nbsp;
-<a href="https://instagram.com/decoderscommunity">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/CIS-A2K_Instagram_Icon_%28Pink%29.svg/640px-CIS-A2K_Instagram_Icon_%28Pink%29.svg.png" height="50px" />
-</a>&nbsp; &nbsp; &nbsp;
-<a href="https://bit.ly/DecodersYoutube">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Antu_youtube-dl.svg/640px-Antu_youtube-dl.svg.png" height="50px" />
-</a>&nbsp; &nbsp; &nbsp;
- </p>
-
-<p align="center">
-Do star the Decoder's repository ✨✨✨
-</p>
-
-<br>
-
-<p align="center">☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷</p>
-
+[![Pull Requests Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](http://makeapullrequest.com)
+[![first-timers-only Friendly](https://img.shields.io/badge/first--timers--only-friendly-blue.svg)](http://www.firsttimersonly.com/)
+[![Setup Automated](https://img.shields.io/badge/setup-automated-blue?logo=gitpod)](https://gitpod.io/from-referrer/)
 
 # portfolio-builder
 
@@ -54,6 +34,10 @@ You can see your portfolios without even deploying your webpage through this lin
 2. Add "htmlpreview.github.io/?" in the prefix of the URL.
 Example: [https://htmlpreview.github.io/?https://github.com/DecodersCommunity/portfolio-builder/blob/main/Template/index.html](https://htmlpreview.github.io/?https://github.com/DecodersCommunity/portfolio-builder/blob/main/Template/index.html)
 
+## Reporting Bugs and Issues
+
+If you have found a bug and you're confident it's a new bug and have confirmed that someone else is facing the same issue, go ahead and create a new GitHub issue. Be sure to include as much information as possible so we can reproduce the bug.
+
 ## Contributors
 
 <a href="https://github.com/DecodersCommunity/portfolio-builder/graphs/contributors">
@@ -63,6 +47,34 @@ Example: [https://htmlpreview.github.io/?https://github.com/DecodersCommunity/po
 ## License
 
 For more information on licensing, please refer to [License](LICENSE)
+
+## Connect with us
+<p align="center">☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷</p>
+
+<p align="center">
+Connect with us 🎉🎉
+</p>
+</br>
+
+<p align="center">
+<a href="https://t.me/decoderscommunity">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" height="50px" />
+</a>&nbsp; &nbsp; &nbsp;
+<a href="https://www.linkedin.com/company/decoderscommunity">
+  <img src="https://raw.githubusercontent.com/alexnaiman/alexnaiman/master/resources/linkedin.webp" height="50px" />
+</a>&nbsp; &nbsp; &nbsp;
+<a href="https://instagram.com/decoderscommunity">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/CIS-A2K_Instagram_Icon_%28Pink%29.svg/640px-CIS-A2K_Instagram_Icon_%28Pink%29.svg.png" height="50px" />
+</a>&nbsp; &nbsp; &nbsp;
+<a href="https://bit.ly/DecodersYoutube">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Antu_youtube-dl.svg/640px-Antu_youtube-dl.svg.png" height="50px" />
+</a>&nbsp; &nbsp; &nbsp;
+ </p>
+<br>
+<p align="center">
+Do star the Decoder's repository ✨✨✨
+</p>
+<p align="center">☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷☷</p>
 
 
 ### 🎉 Thanks for contributing to decoders community 🎉
