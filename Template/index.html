@@ -14,8 +14,6 @@
 
      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-
-    <link href="css/style.css" rel="stylesheet">
     <style>
         *,
 *::before,
@@ -28,6 +26,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -114,6 +113,21 @@ h6, .h6 {
 
 .d-inline {
   display: inline !important;
+}
+
+.dots{
+display: inline-block;
+text-align: center;
+border: 2px solid #0BCEAF;
+width: 11px;
+height: 10px;
+border-radius: 200px;
+background-color: #0BCEAF;
+margin-left: 10px;
+}
+
+.middle-dots{
+  text-align: center;
 }
 
 @media (min-width: 576px) {
@@ -544,6 +558,13 @@ h1,
             </div>
         </div>
     </div>
+
+    <div class='middle-dots'>
+      <div class='dots'> </div>
+      <div class='dots'> </div>
+      <div class='dots'> </div>
+    </div>
+
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
