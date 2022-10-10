@@ -258,6 +258,12 @@
         justify-content: center;
       }
 
+      #footer .row div:nth-child(1){
+        text-align: left;
+      }
+      .sub{
+        flex-direction: column;
+      }
 
     }
 
@@ -621,21 +627,49 @@
       align-items: center;
       padding-left: 5%;
     }
-    
-    .links{
-      padding-left: 20%;
-    }
-    .addressSection{
-      padding-top: 0% !important;
-    }
-    .links a {
-      color: white;
-      cursor: pointer;
-      text-decoration: none;
+    #address{
+      padding: 0 !important;
     }
 
-    .links div {
-      padding-top: 2%;
+    #footer .row div:nth-child(2){
+      padding-top:2%;
+    }
+    #footer .row div:nth-child(2) .container{
+      margin-top: 0;
+    }
+    #section2 .row div:nth-child(2){
+      padding-top: 0;
+    }
+    .newsletter{
+      padding-left: 10%;
+    }
+
+    .newsletter input{
+      padding:2% 5% 2% 5%;
+      margin-top: 3%;
+      border: none;
+      outline: none;
+    }
+    .sub{
+      display: flex;
+    }
+    .newsletter button{
+      margin-top: 3%;
+      padding: 2% 5% 2% 5%;
+      cursor: pointer;
+      border-left: solid 1px black !important;
+      background-color: black;
+      color: white;
+      border: none;
+    }
+    .newsletter button:hover{
+      background-color: #fff;
+      color: #0BCEAF;
+      font-weight: bold;
+    }
+    #foot{
+      padding-top: 1.5% !important;
+      padding-bottom: 1.5% !important;
     }
   </style>
 </head>
@@ -820,53 +854,77 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
+
+  <!-- Footer Secition Starts here -->
+  <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5" id="foot">
     <div id="footer" class="container">
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12">
           <div class="logos"><img src="icons/engineer.png" width="100px" height="100px">
-            <h2>Dr. [Name] <br>[MidName] [LastName]</h2>
+            <h2>
+              
+              <!-- ADD YOUR FULL NAME HERE -->
+              [Name] <br>[MidName] [LastName]
+            
+            </h2>
           </div>
-          <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In suscipit animi omnis facere temporibus nisi
-            odio aliquid, mollitia quisquam quos illum necessitatibus eligendi corrupti assumenda, consequuntur sint
-            natus hic facilis?</div>
+          
           <div class="socials">
-            <a><img src="icons/003-facebook.png" width="30px" height="30px"></a>
-            <a><img src="icons/004-twitter.png" width="30px" height="30px"></a>
-            <a><img src="icons/google-plus.png" width="30px" height="30px"></a>
-            <a><img src="icons/006-linkedin.png" width="30px" height="30px"></a>
-            <div>&#169; 2022 Copyright Reserved</div>
+
+            <!-- ADD YOUR SOCIAL MEDIA HANDLE LINKS INSIDE THE 'href' ATTRIBUTE AS SPECIFIED BELOW -->
+            <a href="your-facebook-link"><img src="icons/003-facebook.png" width="30px" height="30px"></a>
+            <a href="your-twitter-link"><img src="icons/004-twitter.png" width="30px" height="30px"></a>
+            <a href="your-googledrive-link"><img src="icons/google-plus.png" width="30px" height="30px"></a>
+            <a href="your-linkedin-link"><img src="icons/006-linkedin.png" width="30px" height="30px"></a>
+
+            <div>&#169; 
+            
+              <!-- YOUR COPYRIGHT YEAR -->
+              2022 Copyright Reserved
+            
+            </div>
           </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
-                <div class="links">
-                  <h6>Useful Links</h6>
-                  <a href="#">Blog</a>
-                  <div><a href="#">Projects</a></div>
-                  <div><a href="#">Certification</a></div>
-                  <div><a href="#">Skills</a></div>
-                  <div><a href="#">Templates</a></div>
-                  <div><a href="#">Designs</a></div>
-                </div>
-              </div>
-
-
-              <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6 addressSection">
+        <div id="section2" class="col-lg-6 col-md-6 col-sm-12 col-sm-12">
+            <div class="container">
+              <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 addressSection">
                 <div>
                   <h6>Address<img src="icons/location.png" style="padding-left: 2%;" width="20px" height="15px"></h6>
-                  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorum </div>
+                  <div id="address">
+                    
+                    <!-- YOUR COMPLETE ADDRESS GOES HERE -->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga dolorum 
+                  
+                  
+                  </div>
                 </div>
                 <div>
-                  <h6>Contact Me<img src="icons/telephone-handle-silhouette.png" width="20px" height="15px"
+                  <h6 style="padding-top: 2%;">Contact Me<img src="icons/telephone-handle-silhouette.png" width="20px" height="15px"
                       style="padding-left: 2%;"></h6>
-                  <a style="color:white;" href="tel:+91-100000000">+91-100000000</a>
+
+                  <!-- YOUR PHONE NUMBER INSIDE THE 'href' TAG  -->
+                  <a style="color:white;" href="tel:+91-yournumber">
+
+
+                      <!-- TYPE YOUR PHONE NUMBER BELOW  -->
+                    +91-100000000
+                  
+                  </a>
+
+
                 </div>
               </div>
-
-
+              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 newsletter">
+                <div>
+                  <!-- SECTION FOR NEWSLETTER SUBCRIPTION FOR KEEPING THE USERS UPDATED WITH NEW CHANGES AND MODIFICATION -->
+                  <h6>Subscribe to my NewsLetter</h6>
+                  <div class="sub">
+                  <input  placeholder="Enter your email !">
+                  <button>Subscribe</button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
