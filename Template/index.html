@@ -686,6 +686,31 @@
       padding-top: 1.5% !important;
       padding-bottom: 1.5% !important;
     }
+    .zoom {
+  padding: 50px;
+  background-color:  #0BCEAF;
+  transition: transform .2s; /* Animation */
+  width: 80px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.zoom1 {
+  padding: 50px;
+  background-color: white;
+  transition: transform .2s; /* Animation */
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.zoom1:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
     </style>
 </head>
 
@@ -704,9 +729,9 @@
         </button>
         <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
             <div class="navbar-nav m-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#qualification" class="nav-item nav-link">Quality</a>
+                <a href="#home" class="nav-item nav-link active zoom1">Home</a>
+                <a href="#about" class="nav-item nav-link zoom1">About</a>
+                <a href="#qualification" class="nav-item nav-link zoom1">Quality</a>
             </div>
         </div>
     </nav>
@@ -892,9 +917,9 @@
           <div class="socials">
 
             <!-- ADD YOUR SOCIAL MEDIA HANDLE LINKS INSIDE THE 'href' ATTRIBUTE AS SPECIFIED BELOW -->
-            <a href="your-facebook-link"><img src="icons/003-facebook.png" width="30px" height="30px"></a>
-            <a href="your-instagram-link"><img src="icons/instagram.png" width="30px" height="30px"></a>
-            <a href="your-linkedin-link"><img src="icons/006-linkedin.png" width="30px" height="30px"></a>
+            <a href="your-facebook-link" class="zoom"><img src="icons/003-facebook.png" width="30px" height="30px"></a>
+            <a href="your-instagram-link" class="zoom"><img src="icons/instagram.png" width="30px" height="30px"></a>
+            <a href="your-linkedin-link" class="zoom"><img src="icons/006-linkedin.png" width="30px" height="30px"></a>
 
             <div>&#169; 
             
