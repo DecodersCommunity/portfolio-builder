@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio by Decoders Community</title>
+
+    <link href="img/favicon.ico" rel="icon">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <style>
+ *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-family: sans-serif;
+      line-height: 1.15;
+      -webkit-text-size-adjust: 100%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      scroll-behavior: smooth;
+    }
+
+    article,
+    aside,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    nav,
+    section {
+      display: block;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #6c757d;
+      text-align: left;
+      background-color: #ffffff;
+    }
+
+    hr {
+      box-sizing: content-box;
+      height: 0;
+      overflow: visible;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: #0BCEAF;
+      text-decoration: none;
+      background-color: transparent;
+    }
+
+    a:hover {
+      color: #078571;
+      text-decoration: underline;
+    }
+
+    h3,
+    .h3 {
+      font-size: 1.75rem;
+    }
+
+    h4,
+    .h4 {
+      font-size: 1.5rem;
+    }
+
+    h5,
+    .h5 {
+      font-size: 1.25rem;
+    }
+
+    h6,
+    .h6 {
+      font-size: 1rem;
+    }
+
+    .display-1 {
+      font-size: 10rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+    .display-3 {
+      font-size: 4.5rem;
+      font-weight: 300;
+      line-height: 1.2;
+    }
+
+
+    .container,
+    .container-fluid,
+    .container-xl {
+      width: 100%;
+      padding-right: 15px;
+      margin-top: 40px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .d-inline {
+      display: inline !important;
+    }
+    .dots{
+        display: inline-block;
+        text-align: center;
+        border: 2px solid #0BCEAF;
+        width: 11px;
+        height: 10px;
+        border-radius: 200px;
+        background-color: #0BCEAF;
+        margin-left: 10px;
+      }
+      .middle-dots{
+         text-align: center;
+      }
+    .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .col-md-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .col-sm-12{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .col-xs-12{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    @media (min-width: 576px) {
+
+      .container,
+      .container-sm {
+        max-width: 540px;
+      }
+    }
+
+    @media (min-width: 768px) {
+
+      .container,
+      .container-sm,
+      .container-md {
+        max-width: 720px;
+      }
+    }
+
+    @media (min-width: 992px) {
+
+      .container,
+      .container-sm,
+      .container-md,
+      .container-lg {
+        max-width: 960px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+
+      .container,
+      .container-sm,
+      .container-md,
+      .container-lg,
+      .container-xl {
+        max-width: 1140px;
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    @media (min-width: 992px) {
+      .col-lg-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+      }
+
+      .col-lg-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+      }
+
+      .col-lg-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .col-md-6{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .col-sm-12{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .col-xs-12{
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+      .col-lg-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+      }
+
+      .col-lg-7-align {
+        text-align: center;
+        margin: auto;
+      }
+
+      .col-lg-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width : 991px) {
+      .col-sm-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .addressSection{
+        padding-top: 2%;
+      }
+      .row div:nth-child(1) div:nth-child(2) {
+        padding-top: 5% !important;
+        padding-bottom: 0 !important;
+      }
+      .socials{
+        display: flex;
+        justify-content: center;
+      }
+      .logos{
+        display: flex;
+        justify-content: center;
+      }
+
+      #footer .row div:nth-child(1){
+        text-align: left;
+      }
+      #section2{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
+      }
+      #section2 .addressSection div:nth-child(2){
+        font-size: 1rem;
+      }
+
+    }
+
+    .btn-light {
+      color: #212529;
+      background-color: #ffffff;
+      border-color: #ffffff;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      text-decoration: none;
+    }
+
+    .navbar {
+      position: fixed;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand {
+      display: inline-block;
+      padding-top: 0.3125rem;
+      padding-bottom: 0.3125rem;
+      margin-right: 1rem;
+      font-size: 1.25rem;
+      line-height: inherit;
+      white-space: nowrap;
+    }
+
+    .navbar-brand:hover,
+    .navbar-brand:focus {
+      text-decoration: none;
+    }
+
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      padding-left: 0;
+      margin-bottom: 0;
+      list-style: none;
+    }
+
+    .navbar-collapse {
+      flex-grow: 1;
+    }
+
+    @media (min-width: 992px) {
+      .navbar-expand-lg {
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+      }
+
+      .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+      }
+
+      .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+      }
+
+      .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+      }
+
+      .navbar-expand-lg>.container,
+      .navbar-expand-lg>.container-fluid,
+      .navbar-expand-lg>.container-sm,
+      .navbar-expand-lg>.container-md,
+      .navbar-expand-lg>.container-lg,
+      .navbar-expand-lg>.container-xl {
+        flex-wrap: nowrap;
+      }
+
+      .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+      }
+
+      .navbar-expand-lg .navbar-toggler {
+        display: none;
+      }
+    }
+
+
+
+    .navbar-expand {
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+    }
+
+
+
+    .navbar-light .navbar-brand {
+      color: rgba(0, 0, 0, 0.9);
+    }
+
+
+
+    .bg-primary {
+      background-color: #0BCEAF !important;
+    }
+
+
+
+    .bg-light {
+      background-color: #ffffff !important;
+    }
+
+
+
+    .border-top {
+      border-top: 1px solid #dee2e6 !important;
+    }
+
+    .border-right {
+      border-right: 1px solid #dee2e6 !important;
+    }
+
+    .border-bottom {
+      border-bottom: 1px solid #dee2e6 !important;
+    }
+
+    .border-left {
+      border-left: 1px solid #dee2e6 !important;
+    }
+
+
+
+    .border-primary {
+      border-color: #0BCEAF !important;
+    }
+
+
+    .rounded-circle {
+      border-radius: 50% !important;
+    }
+
+
+    .d-none {
+      display: block !important;
+      font-size: 25px;
+      margin-top: 30px;
+      color: white;
+    }
+
+    .d-flex {
+      display: flex !important;
+    }
+
+
+
+    .justify-content-center {
+      justify-content: center !important;
+    }
+
+
+
+    .align-items-center {
+      align-items: center !important;
+    }
+
+
+
+    .position-relative {
+      position: relative !important;
+    }
+
+    .position-absolute {
+      position: absolute !important;
+    }
+
+
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+    .fixed-bottom {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1030;
+    }
+
+
+
+    .shadow-sm {
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+
+
+    .w-100 {
+      width: 100% !important;
+    }
+
+
+
+    .m-0-a {
+      margin-top: 200px;
+    }
+
+
+
+    .pl-4,
+    .px-4 {
+      padding-left: 1.5rem !important;
+    }
+
+
+
+    .pt-5,
+    .py-5 {
+      padding-top: 3rem !important;
+    }
+
+    .pr-5,
+    .px-5 {
+      padding-right: 3rem !important;
+    }
+
+    .pb-5,
+    .py-5 {
+      padding-bottom: 3rem !important;
+    }
+
+
+
+    .m-auto {
+      margin: auto !important;
+      margin-right: 0px !important;
+    }
+
+
+
+    @media (min-width: 992px) {
+
+      .pt-lg-0,
+      .py-lg-0 {
+        padding-top: 0 !important;
+      }
+    }
+
+
+    .text-center {
+      margin-top: -150px;
+      text-align: center !important;
+    }
+
+    @media (min-width: 992px) {
+      .text-lg-left {
+        text-align: left !important;
+      }
+
+      .text-lg-right {
+        text-align: right !important;
+      }
+
+      .text-lg-center {
+        text-align: center !important;
+      }
+    }
+
+
+
+    .font-weight-lighter {
+      font-weight: lighter !important;
+    }
+
+    .text-white {
+      color: #fff !important;
+    }
+
+    .text-primary {
+      color: #0BCEAF !important;
+    }
+
+
+    /********** Template CSS ************/
+    h1,
+    .font-weight-bolder {
+      font-weight: 900 !important;
+    }
+
+    .btn {
+      padding: 10px 25px;
+      border-radius: 100px;
+    }
+
+    .btn-social {
+      width: 45px;
+      height: 45px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+      border-radius: 45px;
+    }
+
+
+    .navbar-light .navbar-nav .nav-link {
+      padding: 25px 10px;
+      color: #343a40;
+      font-weight: 500;
+      outline: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+      color: #0BCEAF;
+    }
+.typed-cursor {
+  font-size: 45px;
+  color: #ffffff;
+}
+#footer {
+      margin-top: 0;
+    }
+
+    #footer .row h2 {
+      letter-spacing: 1px;
+    }
+
+    .logos {
+      display: flex;
+    }
+
+    .logos h2 {
+      padding-top: 4%;
+      padding-left: 5%;
+    }
+
+    .row div:nth-child(1) div:nth-child(2) {
+      padding-top: 4%;
+      padding-bottom: 4%;
+      font-size: .9rem;
+    }
+
+    .socials {
+      display: flex;
+
+    }
+
+    .socials a {
+      padding-left: 2%;
+      cursor: pointer;
+    }
+
+    .socials div {
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      padding-left: 5%;
+    }
+    #address{
+      padding: 0 !important;
+    }
+
+    #footer .row div:nth-child(2){
+      padding-top:2%;
+    }
+    #footer .row div:nth-child(2) .container{
+      margin-top: 0;
+    }
+    #section2 .row div:nth-child(2){
+      padding-top: 0;
+    }
+    .newsletter{
+      padding-left: 10%;
+    }
+
+    .newsletter input{
+      padding:2% 5% 2% 5%;
+      margin-top: 3%;
+      border: none;
+      outline: none;
+    }
+    .sub{
+      display: flex;
+    }
+    .newsletter button{
+      margin-top: 3%;
+      padding: 2% 5% 2% 5%;
+      cursor: pointer;
+      border-left: solid 1px black !important;
+      background-color: black;
+      color: white;
+      border: none;
+    }
+    .newsletter button:hover{
+      background-color: #fff;
+      color: #0BCEAF;
+      font-weight: bold;
+    }
+    #foot{
+      padding-top: 1.5% !important;
+      padding-bottom: 1.5% !important;
+    }
+    </style>
+</head>
+
+
+
+
+<!-- HTML BODY STARTS -->
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">[Name]</span>[Surname]</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Quality</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <!-- YOUR IMAGE ADDRESS (LINK) GOES IN SRC -->
+                    <!-- TRY TO KEEP YOUR IMAGE IN 1:1,THAT IS, SQUARE -->
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" 
+                    src="pranjal.JEPG"
+                    alt="image">
+                </div>
+            <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase mb-2" style="font-family: 'Anton', sans-serif; color: #ffffff;">
+                        
+                        <!--ADD YOUR NAME BELOW THIS -->
+                        Pranjal Dhar Dwivedi
+                    </h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">
+                        
+                        <!-- ADD YOUR TAG LINE HERE -->
+                        i want to become a web developer.
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-lg-7-align">
+                    <p>
+                        
+                        <!-- ADD A BEAUTIFUL PARAGRAPH ABOUT YOURSELF HERE -->
+                        
+                        i am a very hard working person,and dedicated to my goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='middle-dots'>
+      <div class='dots'> </div>
+      <div class='dots'> </div>
+      <div class='dots'> </div>
+    </div>
+
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Skills</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                
+                                <!-- ADD YOUR HIGH SCHOOL'S SCHOOL NAME HERE-->
+                                Shiv Mahesh Public school Amethi
+                            
+                            </h5>
+                            <p class="mb-2"><strong>
+                                
+                                <!-- ADD YOUR GRADES HERE-->
+                                95%
+                            
+                            </strong></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                
+                                <!-- ADD YOUR INTERMEDIATE'S SCHOOL NAME HERE-->
+                                Pt. Nagesh Dutt Public School Lalganj Pratapgarh
+                            </h5>
+                            <p class="mb-2"><strong>
+                                
+                                <!-- ADD YOUR GRADES HERE-->
+                                92%
+                            
+                            </strong></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                
+                                <!-- ADD YOUR UNIVERSITY NAME HERE-->
+                                HBTU Kanpur
+                            
+                            </h5>
+                            <p class="mb-2"><strong>
+                                
+                                <!-- ADD YOUR GRADUATION FIELD HERE-->
+                                7.9 sgpa
+                            
+                            </strong></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-4">My Skills</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                
+                                <!-- ADD YOUR SKILL HERE-->
+                                c language
+                            
+                            </h5>
+                            <p class="mb-2"><strong>
+                                
+                                <!-- ADD YOUR EXPERIENCE IN THAT SKILL HERE-->
+                                besic questions
+                            
+                            </strong></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                
+                                <!-- ADD YOUR SKILL HERE-->
+                                c++ language
+                            
+                            </h5>
+                            <p class="mb-2"><strong>
+                                
+                                <!-- ADD YOUR EXPERIENCE IN THAT SKILL HERE-->
+                                medium questions on codechef
+                            
+                            </strong></p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">
+                                
+                                <!-- ADD YOUR SKILL HERE-->
+                               web development
+                            
+                            </h5>
+                            <p class="mb-2"><strong>
+                                
+                                <!-- ADD YOUR EXPERIENCE IN THAT SKILL HERE-->
+                                currently learning
+                            
+                            </strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- Footer Secition Starts here -->
+  <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5" id="foot">
+    <div id="footer" class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-sm-12">
+          <div class="logos"><img src="icons/engineer.png" width="100px" height="100px">
+            <h2>
+              
+              <!-- ADD YOUR FULL NAME HERE -->
+              Pranjal Dhar  <br> Dwivedi
+            
+            </h2>
+          </div>
+          
+          <div class="socials">
+
+            <!-- ADD YOUR SOCIAL MEDIA HANDLE LINKS INSIDE THE 'href' ATTRIBUTE AS SPECIFIED BELOW -->
+            <a href="your-facebook-link"><img src="icons/003-facebook.png" width="30px" height="30px"></a>
+            <a href="your-instagram-link"><img src="https://www.instagram.com/dwivedipranjaldhar/" width="30px" height="30px"></a>
+            <a href="your-linkedin-link"><img src="https://www.linkedin.com/in/pranjal-dhar-dwivedi-707189254/" width="30px" height="30px"></a>
+
+            <div>&#169; 
+            
+              <!-- YOUR COPYRIGHT YEAR -->
+              2022
+            
+            </div>
+          </div>
+        </div>
+        <div id="section2" class="col-lg-6 col-md-6 col-sm-12 col-sm-12">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 addressSection"></div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 addressSection">
+                <div>
+                  <h6>Address<img src="icons/location.png" style="padding-left: 2%;" width="20px" height="15px"></h6>
+                  <div id="address">
+                    
+                    <!-- YOUR COMPLETE ADDRESS GOES HERE -->
+                    lalganj pratapgrah
+                  
+                  
+                  </div>
+                </div>
+                <div>
+                  <h6 style="padding-top: 2%;">Contact Me<img src="icons/telephone-handle-silhouette.png" width="20px" height="15px"
+                      style="padding-left: 2%;"></h6>
+
+                  <!-- YOUR PHONE NUMBER INSIDE THE 'href' TAG  -->
+                  <a style="color:white;" href="tel:+91-7388135151">
+
+
+                      <!-- TYPE YOUR PHONE NUMBER BELOW  -->
+                    73885135151
+                  
+                  </a>
+
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- DO NOT CHANGE THE CODE BELOW -->
+    <!-- JavaScript Library - Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
