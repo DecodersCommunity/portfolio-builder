@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhuvana's portfolio</title>
+<style>
+nav{
+    padding: 5px;
+    text-align:center;
+    margin-top: 5%;
+    background-color: azure;
+    border-radius:10%;
+}
+a{
+    text-decoration: none;
+    padding:14px;
+    font-family:cursive;
+    font-size: 18px;
+    color:rgb(54, 49, 49);
+}
+nav a:hover{
+    text-decoration: none;
+    padding:14px;
+    font-family:cursive;
+    font-size: 18px;
+    color:rgb(154, 199, 219);
+    border-radius: 30%;
+    text-decoration: underline;
+}
+
+body{
+    background-color:rgb(15, 15, 15);
+    margin:5%;
+}
+#about{
+    display: flex;
+    /*background-color: rgb(50, 46, 46);
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQmuoroBYs_fEQZp6rJrsdgEXSupOCKqRHEQ&usqp=CAU);
+    */background-repeat: no-repeat;
+    background-color:rgb(235, 246, 246);
+    background-size: cover;
+    /*box-shadow: 1px 2px 4px 7px  rgb(229, 235, 209);*/
+    margin-top: 3%;
+    width:100%;
+    border-radius: 3%;
+}
+#about-content{
+width:65%;
+align-content:center;
+padding: 12px;
+margin-left: 1%;
+text-align: justify;
+font-size: 18px;
+}
+#about-content h1,h2{
+    color:rgb(7, 7, 7);
+}
+#about-content p{
+    color:rgb(7, 7, 7);
+    font-size: 18px;
+    font-family: cursive;
+}
+#pic{
+    border-radius: 50%;
+    float:right;
+    height: 40%;
+    margin-top: 3%;
+    margin-left: 2%;
+}
+#content{
+    margin-top:2%;
+    color:rgb(244, 244, 245);
+    font-family: cursive;
+}
+#content a{
+    color:rgb(244, 244, 245);
+    font-family: cursive;
+    font-size:18px;
+}
+table{
+    color:rgb(246, 245, 248);
+    padding: 5px;
+}
+#table h1{
+    color:white;
+    font-family: cursive;
+}
+td{
+    font-family: cursive;
+    border: 1px solid red;
+    padding:8px;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(139, 132, 230);
+}
+th{
+    font-family: cursive;
+    border: 1px solid red;
+    background-color: rgb(73, 66, 213);
+    padding:8px;
+    font-size: 22px;
+}
+#academic{
+    width:100%;
+    margin-top:3%;
+    padding:5px;
+    align-items: center;
+    font-family: cursive;
+    display: flex;
+    max-height: 70%;
+}
+#btech{
+    background-color: rgb(73, 70, 65);
+    width:100%;
+    float:left;
+    padding:5px;
+    text-align: center;
+    height:100%;
+    border-radius: 9%;
+}
+#btech h1{
+    background-color: rgb(179, 200, 219);
+    border-radius: 50%;
+}
+#btech-content{
+    text-align: justify;
+    align-content: center;
+    padding:9px;
+    color:rgb(240, 239, 244);
+    font-size:18px;
+}
+#btech-img{
+    border-radius: 50%;
+    height:100%;
+    width:30%;
+    float:left;
+    margin-right: 2%;
+}
+#btech-img:hover{
+    border-radius: 50%;
+    height:100%;
+    width:60%;
+    float:left;
+}
+#btech-content:hover{
+    text-align: justify;
+    align-content: center;
+    padding:9px;
+    color:rgb(215, 163, 33);
+}
+#inter{
+    background-color:  rgb(73, 70, 65);
+    width:100%;
+    float:left;
+    margin-left:2%;
+    padding:5px;
+    text-align: center;
+    height:100%;
+    border-radius:9%;
+}
+#inter h1{
+    background-color: rgb(179, 200, 219);
+    border-radius:50%;
+}
+#inter-content{
+    text-align: justify;
+    align-content: center;
+    padding:9px;
+    color:rgb(251, 250, 255);
+    font-size:18px;
+}
+#inter-img{
+    border-radius: 50%;
+    height:100%;
+    width:30%;
+    float:left;
+    margin-right: 2%;
+}
+#inter-img:hover{
+    border-radius: 50%;
+    height:100%;
+    width:60%;
+    float:left;
+}
+#inter-content:hover{
+    text-align: justify;
+    align-content: center;
+    padding:9px;
+    color:rgb(215, 163, 33);
+}
+#school{
+    background-color:  rgb(73, 70, 65);
+    width:100%;
+    float:left;
+    padding:5px;
+    margin-left:2%;
+    text-align: center;
+    height:100%;
+    border-radius:9%;
+}
+#school h1{
+    background-color: rgb(179, 200, 219);
+    border-radius:50%;
+}
+#school-content{
+    text-align: justify;
+    align-content: center;
+    padding:9px;
+    color:rgb(248, 246, 253);
+    font-size:18px;
+}
+#school-img{
+    border-radius: 50%;
+    height:100%;
+    width:30%;
+    float:left;
+    margin-right: 2%;
+}
+#school-img:hover{
+    border-radius: 50%;
+    height:100%;
+    width:60%;
+    float:left;
+}
+#school-content:hover{
+    text-align: justify;
+    align-content: center;
+    padding:9px;
+    color:rgb(215, 163, 33);
+}
+#skill{
+    width:100%;
+    display:flex
+}
+#skill-content{
+    display: block;
+    width:43%;
+    margin-top:3%;
+    padding:5px;
+    align-items: center;
+    font-family: cursive;
+    color:white;
+    font-size: 18px;
+}
+#skill h1{
+    margin-top:3%;
+    padding:5px;
+    font-family: cursive;
+    color:white;
+}
+#skill-img1{
+    float:right;
+    width:65%;
+    margin-top:7%;
+    border-radius: 20%;
+}
+
+#certify{
+    display: block;
+    width:100%;
+    margin-top:1%;
+    padding:5px;
+    align-items: center;
+    font-family: cursive;
+    color:white;
+}
+#certify-link{
+    margin-top:3%;
+    padding:5px;
+    font-family: cursive;
+    color:rgb(214, 180, 180);
+    text-decoration: underline;
+}
+#certify li a{
+    font-size: 19px;
+    color:white;
+}
+#certify li{
+    font-size: 18px;
+    color:rgb(245, 237, 237);
+}
+#certify li a:hover{
+    color:rgb(15, 15, 15);
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+#certify img{
+    margin-top:3%;
+    width:100%;
+    border: 10px double rgb(24, 151, 173);
+    border-radius: 2%;
+}
+#achieve{
+    display: block;
+    width:100%;
+    margin-top:3%;
+    padding:5px;
+    align-items: center;
+    font-family: cursive;
+    color:white;
+}
+#achieve li{
+    color:white;
+    font-size: 18px;
+}
+#intern{
+    display: block;
+    width:100%;
+    padding:5px;
+    align-items: center;
+    font-family: cursive;
+    color:white;
+}
+#intern li{
+    color:white;
+    font-size: 18px;
+}
+#project{
+    display: block;
+    width:100%;
+    margin-top:3%;
+    padding:5px;
+    align-items: center;
+    font-family: cursive;
+    color:white;
+}
+#project p,li{
+color:white;
+font-size:18px;
+}
+#project-link{
+    margin-top:3%;
+    padding:5px;
+    font-family: cursive;
+    color:rgb(214, 180, 180);
+    text-decoration: underline;
+}
+#curricular{
+    display: block;
+    width:100%;
+    margin-top:1%;
+    padding:5px;
+    align-items: center;
+    font-family: cursive;
+    color:white;
+    text-align:justify
+}
+#curricular li{
+    color:white;
+    font-size: 18px;
+}
+#personal{
+    display: block;
+    width:100%;
+    padding:5px;
+    align-items: center;
+    font-family: cursive;
+    color:white;
+}
+#personal p{
+    color:white;
+    font-size: 18px;
+}
+footer{
+    background-color: aliceblue;
+    margin:0;
+    width:30%;
+    align-items: center;
+    border-radius:5%;
+}
+</style>
+</head>
+<div>
+    <div id="nav">
+        <nav>
+                <a href="#about">About</a>
+                <a href="#table">Academics</a>
+                <a href="#skill">Skills</a>
+                <a href="#achieve">Achievements</a>
+                <a href="#project">Projects</a>
+                <a href="#intern">Internships</a>
+               
+        </nav>
+    </div>
+    <div id="about">
+        <div id="about-content">
+            <h2>Welcome to my page &#128400;</h2>
+            <h1>It's Bhuvana Gayathri Kanakala</h1>
+            <p>I am a developer. Also Web Development and Data Science enthusiast</p>
+            <p>I was born and brought up in Visakhapatnam, Andhra Pradesh.
+                Currently I am an undergraduate pursuing my B.Tech in CSE from Gayatri Vidya Parishad College of Engineering for Women.
+                I completed around 15+ courses from various
+                e-learning platforms. The courses include programming languages like Python, C, C++, HTML, CSS, JS, Data Science that are provided by e-learning platforms like Coursera, Udemy,Great Learning, Sololearn,Cognitive Class.
+                <br><br>I belong to service background as both of my parents are teachers.
+                I learnt hard work, dedication , time management, determination from my parents.
+                My hobbies include browsing internet through which I learn many new things. I daily browse linkedin for new courses and internships which help me know the unknowns. Listening music is my best ever hobby as it gives me unlimited energy.</p>
+            </div>
+            <img src="photos/pic.png" id="pic" alt="profile">
+    </div>
+   /* <div id="content">
+        <!--h1>Contents</!--h1>
+        &#128073;<a href="#about-content">Who I am?</a><br>
+        &#127942;<a href="#table">Academic details</a><br>
+        &#128073;<a href="#skill">Skills</a><br>
+        &#127941;<a href="#achieve">Academic Achievements</a><br>
+        &#128073;<a href="#certify">Certifications</a><br>
+        &#128073;<a href="#project">Projects</a><br>
+        &#128073;<a href="#intern">Internships</a><br>
+        &#128073;<a href="#curricular">Extra Curricular activities</a><br>
+        &#128073;<a href="#personal">Personal details</a><br-->
+       
+    </div>
+    <div id="table">
+        <h1>Academic Qualifications</h1>
+        <table>
+            <thead>
+              <tr><th>Qualification</th>
+                <th>Institution Name</th>
+                <th>University/Board</th>
+                <th>Year of passing</th>
+                <th>Points</th>
+              </tr>
+              <tr>
+                <td>B.Tech.</td>
+                <td>Gayatri Vidya Prishad College of Engineering for Women</td>
+                <td>Jawaharlal Nehru Technological University, Kakinada</td>
+                <td>2024</td>
+                <td>8.5 (till 4 semesters)</td>
+              </tr>
+              <tr>
+                <td>Intermediate</td>
+                <td>Sri Chaitanya Junior College</td>
+                <td>Board of Intermediate Education</td>
+                <td>2020</td>
+                <td>10.0</td>
+              </tr>
+              <tr>
+                <td>S.S.C</td>
+                <td>The Sun School</td>
+                <td>Board of Secondary Education</td>
+                <td>2018</td>
+                <td>10.0</td>
+              </tr>
+            </thead>
+        </table>
+    
+       
+    <div id="skill">
+        <div id="skill-content">
+            <h1>Skills</h1>
+            <table id="skill-table">
+        <tr><th>Programming languages</th> <td>C,C++,Python,Java(Basics)</td></tr>
+        <tr><th>Web technologies:</th><td>HTML, CSS, JS(Basics)</td> </tr>
+        <tr><th>Operating Systems:</th><td>Windows, Mac OS</td></tr>
+        <tr><th>DBMS: </th><td>Oracle</td></tr>
+        <tr><th>MS Office: </th><td>MS Word and MS Powerpoint</td></tr>
+        <tr><th>Others: </th><td>Git and GitHub</td></tr>
+         </table>
+        </div>
+        <div id="skill-img1">  <img src="photos/skill_img.png" id="skill-img1"></div>
+    </div>
+    <div id="achieve">
+        <h1>Academic Achievements</h1>
+        <ul type="square">
+            <li>Currently among the top 10 of the B.Tech. class</li><br>
+            <li>Awarded scholarship for securing 1st rank during the entire high schooling (6th-10th )
+            </li><br><li>
+                Secured 1st prize and 2nd prize (in English and Telugu respectively) in District level Essay writing competition conducted by the Forest Department as a part of “Vanam- Manam”
+            </li><br><li>Secured good marks (971/1000) in Intermediate and topped the class</li><br>
+            <li>Qualified JEE Mains</li><br>
+            <li>Secured 9104 rank in EAMCET (A.P. state entrance test for Engg.)</li>
+            </ul>
+    </div>
+    <div id="certify">
+        <h1>Certifications</h1>
+        <ol>
+            <li><b><a href="https://www.credly.com/badges/7d49916d-af0b-4294-a7e4-e0e7ce663f56/linked_in_profile">Microsoft certified Azure Data Scientist Associate</a></b></li><br>
+            <li><b><a href="https://www.coursera.org/account/accomplishments/certificate/FVA2DUWMM2G6">Introduction to Web Development</a></b>,offered by <b>UC</b>Davis on Coursera</li><br>
+            <li><b><a href="https://www.coursera.org/account/accomplishments/certificate/Y5EZEJ9P6S4P">What is Data Science?</a></b>,offered by IBM on Coursera</li><br>
+            <li><b><a href="https://www.coursera.org/account/accomplishments/certificate/KC4AW37G25FY">Python Programming:A Concise Introduction</a></b>,offered by Wesleyan University on Coursera</li><br>
+            <li><b><a href="https://www.guvi.in/verify-certificate?id=In7G37m9w82X421976&course=undefined">AI for Women</a></b>,provided by <b>GUVI</b> </li><br>
+            <li><b><a href="https://www.guvi.in/verify-certificate?id=11vWXu9j48U64670s8&course=pygame_english">Game Development using PyGame</a></b>,provided by <b>GUVI</b></li><br>
+            <li><b><a href="https://www.linkedin.com/posts/bhuvana-gayathri-kanakala-035001209_bhuvana-gayathri-kanakala-successfully-completed-activity-6853355028472750080-7BbZ?utm_source=share&utm_medium=member_desktop">Introduction to OOPs in C++</a></b>,provided by Great Learning</li><br>
+            <li><b><a href="https://www.linkedin.com/posts/bhuvana-gayathri-kanakala-035001209_introduction-to-cybersecurity-was-issued-activity-6949290231984467968-b-uz?utm_source=share&utm_medium=member_desktop">Introduction to Cyber Security</a></b>,provided by Cisco</li><br>
+            <li><b><a href="https://www.linkedin.com/posts/bhuvana-gayathri-kanakala-035001209_all-cybersecurityessentials-cybersecurity-activity-6975747243945455617-ZC2r?utm_source=share&utm_medium=member_desktop">Cyber Security Essentials</a></b>,provided by Cisco</li><br>
+            <li><b><a href="https://skillsoft.digitalbadges.skillsoft.com/2a3a1c6a-5464-460c-8174-9bca0736b839">Using Git for DevOps:Using Git Effectively</a></b>,offered by Skillsoft on Infosys Springboard</li>
+        </ol>
+        <i>(Apart from the above Certifications I had done few other short term courses online in various platform like Sololearn, Great Learning etc.,)</i><br>
+       <br> <a id="certify-link" href="https://www.linkedin.com/in/bhuvana-gayathri-kanakala-035001209/recent-activity/shares/">Click here to view my certifications.</a>
+    
+        <img src="photos/certify_img.png">
+    
+    </div>
+    <div id="project">
+        <h1>Projects</h1>
+        <p>Currently working on “Integration project” and “Course outcome feedback analysis system”.
+            <br><br><b>Mini projects/Finished works:</b>
+            <li>Creamstone website clone</li>
+            <li>Event registration system</li>
+            <li>Basic banking system</li>
+            <li>Score detector</li>
+            <li>Responsive registration page</li><br>
+            <a href="https://github.com/bhuvana0315" id="project-link">View my works by clicking this link</a>
+            </p>
+    </div>
+    <ul id="intern">
+        <h1>Internships</h1>
+        <ul>
+            <li>Worked as Salesforce Developer at Salesforce virtual internship for a duration of 2 months. <br>During this internship I learnt various modules on Trailhead related to Salesforce.</li>
+            <br><li>Learnt the basic concepts related to Cyber Security during the Cyber Security virtual internship (2 months) provided by Cisco</li>
+            <br><li>Worked as Web Developer intern at Lets Grow More virtual internship for a duration of 1 month.Technologies used are HTML, CSS, JS.
+            During this I build the following web applications <ol><li>To do list</li> <li>Responsive registration page</li></ol>
+        </li><br><li>Worked as Data Science and Business analytics intern at The Sparks Foundation.<br>
+        During which I developed simple linear regression model to find the score of student based on number of working hours.</li>
+    <br><li>Worked as Web Developer intern at The Sparks Foundation virtual internship for a duration of 1 month.
+        During this I build the Basking banking system.Technologies used are HTML, CSS, JS.</li></ul></div>
+    <div id="curricular">
+        <h1>Extra Curricular Activities</h1>
+        <ul>
+            <li>Secured 2nd prize in Web development competition conducted by PICSL Club of our college.
+                </li><br>
+                <li>Participated in PPT presentation, article writing competitions</li><br>
+                <li>Participated in project expo as well as various IEEE events</li><br>
+                <li>Being a Balvikas student I volunteered for Sri Satya Sai Seva organization</li><br>
+                <li>Web Development team lead in GDSC- GVPCEW, organized 10+ events related to web
+                </li><br>
+                <li>Team lead in Kalam Dream Labs internship</li><br>
+                <li>Completed 8 levels of Hindi exams conducted by Dakshin Bharat Hindi Prachar Sabha</li><br>
+                <li>Cleared Group-I Balvikas exam conducted by Sri Satya Sai Seva Organizations</li>  
+        </ul>
+    </div>
+    <div id="personal">
+        <h1>Personal Details</h1>
+        <p>I was born on 15th September 2002 in a middle class family. I am the last child to my parents. Both my parents are post graduates and are teachers. I have two sisters who are graduates.
+            My hobbies include listening to music, coins collection, discussion with friends, browsing internet
+           The languages that I know are Telugu, English, Hindi
+        My strengths include
+            Hardworking, 
+            Ability to interact with people,
+            Multi tasking.<br><br>
+            
+            </p>
+    </div>
+</body>
+<center>
+    <footer>
+        <h1>Follow on</h1>
+        <div id="footer"><a href="https://www.linkedin.com/in/bhuvana-gayathri-kanakala-035001209/">Linkedin<i class="fa-brands fa-linkedin"></i></a> 
+          
+          <a href="https://github.com/bhuvana0315">GitHub</a>
+       </div>  
+   </footer>
+</center>
+</html>
